@@ -1,0 +1,48 @@
+<!--
+Generated template for the NiveldefebrePage page.
+
+See http://ionicframework.com/docs/components/#navigation for more info on
+Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>QUAL A MEDIDA DA TEMPERATUDA DO SEU BEBÊ?</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" floating>Digite a temperatura</ion-label>
+      <ion-input [(ngModel)]="temperatura"></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button full (click)="verificar();">Verificar</button>
+  </ion-list>
+
+  <div *ngIf="nivel1">
+    <img src="/assets/imgs/nivel1.png">
+  </div>
+
+  <div *ngIf="nivel2">
+    <img src="/assets/imgs/nivel2.png">
+  </div>
+
+  <div *ngIf="nivel3">
+    <img src="/assets/imgs/nivel3.png">
+  </div>
+
+    <div *ngIf="nivel4">
+      <img src="/assets/imgs/nivel4.png">
+    </div>
+
+    <div *ngIf="nivel5">
+      <img src="/assets/imgs/nivel5.png">
+    </div>
+
+
+</ion-content>

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cuidar - Gestão de Problemas de Saúde Autolimitados</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-grid>
+
+    <ion-row class="avaliacoes"  (click)='doencas()'>
+      <ion-col col-4>
+        <img src="/assets/imgs/logo-avaliacao-new.png">
+      </ion-col>
+      <ion-col col-8 class="avaliacoes-titulo">
+        <p>DOENÇAS</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="avaliacoes" (click)='sobre()'>
+      <ion-col col-4>
+        <img src="/assets/imgs/about.png" >
+      </ion-col>
+      <ion-col col-8 class="avaliacoes-titulo">
+        <p>SOBRE O APP</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="avaliacoes" (click)='desenvolvedores()'>
+      <ion-col col-4>
+        <img src="/assets/imgs/grupo.png" >
+      </ion-col>
+      <ion-col col-8 class="avaliacoes-titulo">
+        <p>GRUPO DESENVOLVEDOR</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="avaliacoes" (click)="sair()">
+      <ion-col col-4>
+        <img src="/assets/imgs/sair.png" >
+      </ion-col>
+      <ion-col col-8 class="avaliacoes-titulo">
+        <p>SAIR</p>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

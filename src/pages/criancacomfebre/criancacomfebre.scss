@@ -1,0 +1,68 @@
+page-criancacomfebre {
+
+}
+
+.titulo{
+  text-align: center;
+}
+
+.botoes{
+  float: center;
+  width: 100%;
+}
+
+.alertas{
+  text-align: justify;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.alerta{
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.botoesTrat{
+  font-size: 12px;
+  width: 100%;
+}
+
+.bloco-tratamento{
+  width: 100%;
+  background-color: #297baa;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.iconeplus{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top:7px;
+}
+
+.caixa-aviso{
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.texto-tratamento{
+  padding: 5px;
+}
+
+.bloco-aviso{
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+}

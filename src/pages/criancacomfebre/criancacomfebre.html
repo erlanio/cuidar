@@ -1,0 +1,147 @@
+<!--
+Generated template for the CriancacomfebrePage page.
+
+See http://ionicframework.com/docs/components/#navigation for more info on
+Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Criança com Febre</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <h4 class="titulo">A temperatura da criança é maior que 37,5 oC AXILAR?</h4>
+      </ion-col>
+
+      <ion-col col-12>
+        <button class="botoes" ion-button color="secondary" outline round (click)='tempelevadaClick()'>SIM</button>
+      </ion-col>
+
+
+    </ion-row>
+  </ion-grid>
+
+
+  <div *ngIf="tempelevada">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <h4 class="titulo">Temperatura elevada há mais de 3 dias?</h4>
+        </ion-col>
+        <ion-col col-6>
+          <button class="botoes" ion-button color="secondary" outline round (click)='procurarmedico()'>SIM</button>
+        </ion-col>
+
+        <ion-col col-6>
+          <button class="botoes" ion-button color="danger" outline round (click)='sinaisAlertaClick()'>NÃO</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div *ngIf="sinaisAlerta">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <h4 class="titulo">Há presença de algum dos sinais de alerta?</h4>
+          <div class="alerta">
+            <p class="alertas">A criança tem menos de 2 anos?</p>
+            <p class="alertas">  A criança tem menos de 6 meses de idade com temperatura retal maior que 38 graus?</p>
+            <p class="alertas">  A criança tem mais de 6 meses de idade com temperatura retal maior 40 graus?</p>
+            <p class="alertas">  A criança se recusa a ingerir liquídos?</p>
+            <p class="alertas">  A criança está muito sonolenta, irritável ou com dificuldade de acordar?</p>
+            <p class="alertas">  Ocorrência de vômitos e que não conseguem manter líquidos ingeridos?</p>
+            <p class="alertas"> Sintomas coerentes com dengue, Chikungunya ou infecção por Zikavírus?</p>
+            <p class="alertas"> A criança apresenta rash cutâneo?</p>
+            <p class="alertas"> A criança apresenta dificuldade de respirar?</p>
+            <p class="alertas"> A criança apresenta diarréia?</p>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <button class="botoes" ion-button color="secondary" outline round (click)='procurarmedico()'>SIM</button>
+        </ion-col>
+
+        <ion-col col-6>
+          <button class="botoes" ion-button color="danger" outline round (click)='tratamentoClick()'>NÃO</button>
+        </ion-col>
+
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div *ngIf="tratamento">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+
+          <div class="caixa-aviso">
+            <ion-col col-12 class="texto-caixa">
+              1. Continue a observar o aparecimento de qualquer sinal de alerta para procurar atendimento médico.<br><br>
+              2. A febre autolimitada em crianças sadias é benigna e pode ser tratada com as seguintes medidas:
+            </ion-col>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <button class="botoesTrat" ion-button color="secondary" outline round (click)='nfarma()'>Não farmacológico</button>
+        </ion-col>
+        <ion-col col-1>
+          <ion-icon name="add" class="iconeplus"></ion-icon>
+        </ion-col>
+
+        <ion-col col-5>
+          <button class="botoesTrat" ion-button color="danger" outline round (click)='farma()'>Farmacológico</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div *ngIf="tratnfarmacologico">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <h4 class="titulo">Tratamento não farmacológico</h4>
+        </ion-col>
+        <ion-col col-12>
+          <div class="bloco-tratamento">
+            <div class="texto-tratamento">
+              <p>Banho com água morna</p>
+              <p>Ventilação ambiente</p>
+              <p>Ingestão de água</p>
+            </div>
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div *ngIf="tratfarmacologico">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <h4 class="titulo">Tratamento Farmacológico</h4>
+        </ion-col>
+        <ion-col col-12>
+          <div class="bloco-tratamento">
+            <div class="texto-tratamento">
+              <p>Paracetamol</p>
+              <p>Ibuprofeno</p>
+              <p>Dipirona</p>
+            </div>
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>
